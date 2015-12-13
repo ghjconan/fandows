@@ -6,6 +6,8 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+from revproxy.views import ProxyView
+
 
 def home(request):
     """Renders the home page."""
@@ -47,3 +49,7 @@ def about(request):
             'year':datetime.now().year,
         })
     )
+
+
+class GoogleProxyView(ProxyView):
+    upstream = 'http://google.com'

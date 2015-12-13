@@ -6,6 +6,7 @@
     <RootNamespace>fdproxy</RootNamespace>
     <InterpreterId>{827dcea0-5fb6-4068-9f50-65c0a1d2ac7d}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>django-demo02</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,6 +53,7 @@
     <Folder Include="fdproxy\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="django-demo02.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
